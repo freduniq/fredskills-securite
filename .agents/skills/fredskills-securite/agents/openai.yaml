@@ -1,0 +1,6 @@
+interface:
+  display_name: "fredskills sécurité"
+  short_description: "Audit et développement web sécurisé pour Codex"
+  default_prompt: "Utilise $fredskills-securite pour examiner la sécurité de ce projet, corriger uniquement les failles confirmées dans le périmètre demandé et fournir preuves, tests et risques résiduels."
+policy:
+  allow_implicit_invocation: true

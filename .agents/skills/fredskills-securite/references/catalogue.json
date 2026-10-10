@@ -1,0 +1,1160 @@
+{
+  "version": "1.0.0",
+  "count": 210,
+  "groups": [
+    {
+      "code": 1,
+      "title": "Injections",
+      "start": 1,
+      "items": [
+        {
+          "id": 1,
+          "name": "SQL Injection (SQLi)",
+          "description": "Altère une requête SQL via une donnée contrôlée par un utilisateur."
+        },
+        {
+          "id": 2,
+          "name": "Blind SQL Injection",
+          "description": "Infère des résultats SQL sans affichage direct des données."
+        },
+        {
+          "id": 3,
+          "name": "Time-Based SQL Injection",
+          "description": "Infère l'état d'une requête SQL via le délai de réponse."
+        },
+        {
+          "id": 4,
+          "name": "Error-Based SQL Injection",
+          "description": "Exploite les détails d'erreur SQL exposés."
+        },
+        {
+          "id": 5,
+          "name": "NoSQL Injection",
+          "description": "Manipule un filtre ou opérateur d'une base NoSQL."
+        },
+        {
+          "id": 6,
+          "name": "Command Injection",
+          "description": "Fait interpréter une entrée comme commande du système."
+        },
+        {
+          "id": 7,
+          "name": "Code Injection",
+          "description": "Introduit une donnée interprétée comme code exécutable."
+        },
+        {
+          "id": 8,
+          "name": "LDAP Injection",
+          "description": "Modifie la logique d'un filtre LDAP."
+        },
+        {
+          "id": 9,
+          "name": "XPath Injection",
+          "description": "Détourne une expression XPath construite sans protection."
+        },
+        {
+          "id": 10,
+          "name": "XML Injection",
+          "description": "Injecte une structure XML inattendue dans un traitement."
+        },
+        {
+          "id": 11,
+          "name": "XXE Injection",
+          "description": "Abuse d'entités externes lors du traitement XML."
+        },
+        {
+          "id": 12,
+          "name": "SSTI",
+          "description": "Exécute des expressions non fiables dans un moteur de templates serveur."
+        },
+        {
+          "id": 13,
+          "name": "HTML Injection",
+          "description": "Introduit du balisage actif dans une page."
+        },
+        {
+          "id": 14,
+          "name": "CSS Injection",
+          "description": "Injecte des règles CSS ou valeurs de style non fiables."
+        },
+        {
+          "id": 15,
+          "name": "CRLF Injection",
+          "description": "Injecte des séparateurs de ligne dans les protocoles texte."
+        },
+        {
+          "id": 16,
+          "name": "HTTP Header Injection",
+          "description": "Manipule la composition des en-têtes HTTP."
+        },
+        {
+          "id": 17,
+          "name": "Email Header Injection",
+          "description": "Insère de faux champs dans les en-têtes d'e-mail."
+        },
+        {
+          "id": 18,
+          "name": "CSV / Formula Injection",
+          "description": "Fait interpréter des cellules exportées comme formules."
+        },
+        {
+          "id": 19,
+          "name": "GraphQL Injection",
+          "description": "Exploit de la construction non fiable des requêtes ou résolveurs GraphQL."
+        },
+        {
+          "id": 20,
+          "name": "Server-Side JavaScript Injection",
+          "description": "Provoque l'interprétation JavaScript d'une entrée côté serveur."
+        }
+      ],
+      "path": "references/01-injections.md"
+    },
+    {
+      "code": 2,
+      "title": "XSS et navigateur",
+      "start": 21,
+      "items": [
+        {
+          "id": 21,
+          "name": "Reflected XSS",
+          "description": "Script renvoyé dans une réponse puis exécuté dans le navigateur."
+        },
+        {
+          "id": 22,
+          "name": "Stored XSS",
+          "description": "Charge du code depuis une donnée persistée dans l'application."
+        },
+        {
+          "id": 23,
+          "name": "DOM-Based XSS",
+          "description": "Injecte des données dans un puits DOM dangereux."
+        },
+        {
+          "id": 24,
+          "name": "Blind XSS",
+          "description": "Charge utile XSS déclenchée dans un autre parcours utilisateur."
+        },
+        {
+          "id": 25,
+          "name": "Mutation XSS",
+          "description": "Exploit des transformations du DOM après sanitation insuffisante."
+        },
+        {
+          "id": 26,
+          "name": "Self-XSS",
+          "description": "Incite une personne à exécuter du code dans son navigateur."
+        },
+        {
+          "id": 27,
+          "name": "Cross-Site Script Inclusion",
+          "description": "Expose des données ou fonctionnalités via l'inclusion de script inter-origines."
+        },
+        {
+          "id": 28,
+          "name": "DOM Clobbering",
+          "description": "Utilise des éléments HTML pour écraser des variables ou références DOM."
+        },
+        {
+          "id": 29,
+          "name": "Clickjacking",
+          "description": "Superpose des interfaces pour provoquer un clic involontaire."
+        },
+        {
+          "id": 30,
+          "name": "UI Redressing",
+          "description": "Présente une interface trompeuse pour détourner une action."
+        },
+        {
+          "id": 31,
+          "name": "Cross-Site WebSocket Hijacking",
+          "description": "Abuse d'une connexion WebSocket fondée sur des cookies sans contrôle d'origine."
+        },
+        {
+          "id": 32,
+          "name": "Client-Side Prototype Pollution",
+          "description": "Modifie des propriétés de prototype JavaScript depuis des données non fiables."
+        }
+      ],
+      "path": "references/02-xss-navigateur.md"
+    },
+    {
+      "code": 3,
+      "title": "Authentification et sessions",
+      "start": 33,
+      "items": [
+        {
+          "id": 33,
+          "name": "Brute Force",
+          "description": "Essais répétés d'authentifiants pour obtenir un accès."
+        },
+        {
+          "id": 34,
+          "name": "Dictionary Attack",
+          "description": "Essais de mots de passe tirés d'un dictionnaire."
+        },
+        {
+          "id": 35,
+          "name": "Credential Stuffing",
+          "description": "Réutilise des identifiants compromis sur d'autres services."
+        },
+        {
+          "id": 36,
+          "name": "Password Spraying",
+          "description": "Teste des secrets fréquents sur de nombreux comptes."
+        },
+        {
+          "id": 37,
+          "name": "Account Enumeration",
+          "description": "Révèle si un identifiant est enregistré."
+        },
+        {
+          "id": 38,
+          "name": "Authentication Bypass",
+          "description": "Contourne une vérification d'identité."
+        },
+        {
+          "id": 39,
+          "name": "MFA Bypass",
+          "description": "Contourne l'étape multifacteur."
+        },
+        {
+          "id": 40,
+          "name": "MFA Fatigue",
+          "description": "Déclenche trop de notifications MFA pour obtenir une acceptation."
+        },
+        {
+          "id": 41,
+          "name": "OTP Brute Force",
+          "description": "Devine des codes à usage unique par essais."
+        },
+        {
+          "id": 42,
+          "name": "Password Reset Poisoning",
+          "description": "Modifie le lien ou destinataire d'une récupération de compte."
+        },
+        {
+          "id": 43,
+          "name": "Password Reset Token Theft",
+          "description": "Soustrait un jeton de récupération valide."
+        },
+        {
+          "id": 44,
+          "name": "Account Takeover (ATO)",
+          "description": "Obtient le contrôle du compte d'un utilisateur."
+        },
+        {
+          "id": 45,
+          "name": "Session Fixation",
+          "description": "Impose un identifiant de session avant connexion."
+        },
+        {
+          "id": 46,
+          "name": "Session Hijacking",
+          "description": "Détourne une session active."
+        },
+        {
+          "id": 47,
+          "name": "Session Replay",
+          "description": "Réutilise un artefact d'authentification intercepté."
+        },
+        {
+          "id": 48,
+          "name": "Cookie Theft",
+          "description": "Extrait et réutilise un cookie sensible."
+        },
+        {
+          "id": 49,
+          "name": "JWT Forgery",
+          "description": "Exploite une validation de signature JWT défaillante."
+        },
+        {
+          "id": 50,
+          "name": "JWT Algorithm Confusion",
+          "description": "Profite d'une confusion entre algorithmes de validation JWT."
+        },
+        {
+          "id": 51,
+          "name": "OAuth Misconfiguration",
+          "description": "Exploite un flux OAuth insuffisamment sécurisé."
+        },
+        {
+          "id": 52,
+          "name": "OAuth Account Linking Attack",
+          "description": "Relie frauduleusement un compte fédéré à un compte local."
+        },
+        {
+          "id": 53,
+          "name": "OpenID Connect Misconfiguration",
+          "description": "Exploite une validation OIDC incomplète."
+        },
+        {
+          "id": 54,
+          "name": "SAML Signature Wrapping",
+          "description": "Présente une assertion SAML hors de la zone effectivement signée."
+        },
+        {
+          "id": 55,
+          "name": "Login CSRF",
+          "description": "Force un navigateur à s'authentifier sur un compte non voulu."
+        }
+      ],
+      "path": "references/03-authentification-sessions.md"
+    },
+    {
+      "code": 4,
+      "title": "Autorisations et rôles",
+      "start": 56,
+      "items": [
+        {
+          "id": 56,
+          "name": "IDOR",
+          "description": "Accède à un objet par un identifiant sans vérifier son propriétaire."
+        },
+        {
+          "id": 57,
+          "name": "BOLA",
+          "description": "Accède à un objet API sans contrôle d'autorisation par objet."
+        },
+        {
+          "id": 58,
+          "name": "BFLA",
+          "description": "Accède à une opération API non autorisée pour le rôle."
+        },
+        {
+          "id": 59,
+          "name": "Broken Access Control",
+          "description": "Contourne les règles de visibilité et de modification."
+        },
+        {
+          "id": 60,
+          "name": "Privilege Escalation",
+          "description": "Obtient des privilèges supérieurs à ceux attribués."
+        },
+        {
+          "id": 61,
+          "name": "Horizontal Privilege Escalation",
+          "description": "Accède aux ressources d'un autre utilisateur de même rôle."
+        },
+        {
+          "id": 62,
+          "name": "Vertical Privilege Escalation",
+          "description": "Obtient les capacités d'un rôle privilégié."
+        },
+        {
+          "id": 63,
+          "name": "Forced Browsing",
+          "description": "Utilise directement une URL non protégée."
+        },
+        {
+          "id": 64,
+          "name": "Mass Assignment",
+          "description": "Associe automatiquement des champs sensibles fournis par le client."
+        },
+        {
+          "id": 65,
+          "name": "Parameter Tampering",
+          "description": "Modifie des paramètres métier ou d'accès côté client."
+        },
+        {
+          "id": 66,
+          "name": "Role Manipulation",
+          "description": "Modifie frauduleusement des rôles ou attributions."
+        },
+        {
+          "id": 67,
+          "name": "Tenant Isolation Bypass",
+          "description": "Traverse la frontière entre organisations SaaS."
+        },
+        {
+          "id": 68,
+          "name": "Insecure Direct File Access",
+          "description": "Accède à une ressource privée via son URL directe."
+        },
+        {
+          "id": 69,
+          "name": "Missing Function-Level Authorization",
+          "description": "Appelle une fonction sans contrôle de rôle."
+        },
+        {
+          "id": 70,
+          "name": "Workflow Authorization Bypass",
+          "description": "Saute une approbation ou vérification d'autorisation intermédiaire."
+        }
+      ],
+      "path": "references/04-autorisations-roles.md"
+    },
+    {
+      "code": 5,
+      "title": "API, GraphQL et WebSocket",
+      "start": 71,
+      "items": [
+        {
+          "id": 71,
+          "name": "API BOLA",
+          "description": "Accès API à un objet non autorisé."
+        },
+        {
+          "id": 72,
+          "name": "API Broken Authentication",
+          "description": "Absence ou défaut de contrôle d'identité dans l'API."
+        },
+        {
+          "id": 73,
+          "name": "Excessive Data Exposure",
+          "description": "Réponse API contenant des champs sensibles inutiles."
+        },
+        {
+          "id": 74,
+          "name": "API Mass Assignment",
+          "description": "Mise à jour de propriétés non autorisées via une API."
+        },
+        {
+          "id": 75,
+          "name": "API Rate Limit Bypass",
+          "description": "Contourne le plafonnement des appels API."
+        },
+        {
+          "id": 76,
+          "name": "Unrestricted Resource Consumption",
+          "description": "Épuise les ressources par des requêtes coûteuses."
+        },
+        {
+          "id": 77,
+          "name": "API Key Leakage",
+          "description": "Expose une clé d'API dans le code ou les réponses."
+        },
+        {
+          "id": 78,
+          "name": "API Key Abuse",
+          "description": "Réutilise une clé API volée ou trop permissive."
+        },
+        {
+          "id": 79,
+          "name": "GraphQL Introspection Exposure",
+          "description": "Permet de découvrir un schéma GraphQL qui devrait être restreint."
+        },
+        {
+          "id": 80,
+          "name": "GraphQL Query Complexity Abuse",
+          "description": "Exécute des graphes ou requêtes GraphQL trop complexes."
+        },
+        {
+          "id": 81,
+          "name": "GraphQL Batching Abuse",
+          "description": "Abuse des requêtes GraphQL groupées pour contourner des quotas."
+        },
+        {
+          "id": 82,
+          "name": "WebSocket Authentication Bypass",
+          "description": "Utilise un canal WebSocket sans identité vérifiée."
+        },
+        {
+          "id": 83,
+          "name": "WebSocket Message Tampering",
+          "description": "Transmet des messages WebSocket non autorisés ou altérés."
+        },
+        {
+          "id": 84,
+          "name": "Shadow API Exploitation",
+          "description": "Cible des routes API anciennes ou non inventoriées."
+        },
+        {
+          "id": 85,
+          "name": "Deprecated API Exploitation",
+          "description": "Profite des anciennes versions d'API non maintenues."
+        }
+      ],
+      "path": "references/05-api-graphql-websocket.md"
+    },
+    {
+      "code": 6,
+      "title": "Fichiers et serveur",
+      "start": 86,
+      "items": [
+        {
+          "id": 86,
+          "name": "LFI",
+          "description": "Charge un fichier local sous le contrôle d'un paramètre."
+        },
+        {
+          "id": 87,
+          "name": "RFI",
+          "description": "Charge un fichier distant en tant que ressource exécutable."
+        },
+        {
+          "id": 88,
+          "name": "Path Traversal",
+          "description": "Remonte hors du répertoire autorisé pour accéder à des fichiers."
+        },
+        {
+          "id": 89,
+          "name": "Arbitrary File Upload",
+          "description": "Dépose un fichier dangereux qui peut être interprété ou servi."
+        },
+        {
+          "id": 90,
+          "name": "Unrestricted File Upload",
+          "description": "Téléverse des fichiers sans limites de type, taille ou destination."
+        },
+        {
+          "id": 91,
+          "name": "File Overwrite",
+          "description": "Remplace des fichiers existants via une destination non maîtrisée."
+        },
+        {
+          "id": 92,
+          "name": "Arbitrary File Read",
+          "description": "Lit des fichiers hors du périmètre autorisé."
+        },
+        {
+          "id": 93,
+          "name": "Arbitrary File Deletion",
+          "description": "Supprime des fichiers hors du périmètre autorisé."
+        },
+        {
+          "id": 94,
+          "name": "Remote Code Execution (RCE)",
+          "description": "Exécute des instructions sur le serveur à distance."
+        },
+        {
+          "id": 95,
+          "name": "Local Privilege Escalation",
+          "description": "Gagne plus de privilèges après un accès serveur initial."
+        },
+        {
+          "id": 96,
+          "name": "Insecure Deserialization",
+          "description": "Restaure des objets non fiables pouvant déclencher des effets indésirables."
+        },
+        {
+          "id": 97,
+          "name": "PHP Object Injection",
+          "description": "Provoque des appels de méthodes magiques à la désérialisation PHP."
+        },
+        {
+          "id": 98,
+          "name": "Insecure Temporary Files",
+          "description": "Abuse de fichiers temporaires accessibles ou prédictibles."
+        },
+        {
+          "id": 99,
+          "name": "Exposed Backup Files",
+          "description": "Récupère des sauvegardes publiées par erreur."
+        },
+        {
+          "id": 100,
+          "name": "Exposed Environment Files",
+          "description": "Récupère des fichiers .env contenant des secrets."
+        },
+        {
+          "id": 101,
+          "name": "Directory Listing Exposure",
+          "description": "Explore un répertoire faute de page index et de restriction."
+        },
+        {
+          "id": 102,
+          "name": "Server Misconfiguration",
+          "description": "Abuse d'une configuration serveur permissive."
+        },
+        {
+          "id": 103,
+          "name": "Web Shell Installation",
+          "description": "Déploie un script permettant des commandes persistantes."
+        },
+        {
+          "id": 104,
+          "name": "Dependency Exploitation",
+          "description": "Exploite une bibliothèque vulnérable installée."
+        },
+        {
+          "id": 105,
+          "name": "Configuration File Disclosure",
+          "description": "Obtient des paramètres internes exposés."
+        }
+      ],
+      "path": "references/06-fichiers-serveur.md"
+    },
+    {
+      "code": 7,
+      "title": "HTTP et réseau",
+      "start": 106,
+      "items": [
+        {
+          "id": 106,
+          "name": "HTTP Request Smuggling",
+          "description": "Exploite des interprétations contradictoires d'une requête par des intermédiaires."
+        },
+        {
+          "id": 107,
+          "name": "HTTP Response Splitting",
+          "description": "Découpe frauduleusement une réponse HTTP."
+        },
+        {
+          "id": 108,
+          "name": "HTTP Host Header Attack",
+          "description": "Contrôle des URL ou décisions fondées sur l'en-tête Host."
+        },
+        {
+          "id": 109,
+          "name": "HTTP Parameter Pollution",
+          "description": "Exploite la coexistence ambiguë de paramètres portant le même nom."
+        },
+        {
+          "id": 110,
+          "name": "Web Cache Poisoning",
+          "description": "Empoisonne le cache avec une réponse influencée par une entrée non représentée dans la clé."
+        },
+        {
+          "id": 111,
+          "name": "Web Cache Deception",
+          "description": "Amène le cache à stocker une ressource privée sous une URL trompeuse."
+        },
+        {
+          "id": 112,
+          "name": "DNS Spoofing",
+          "description": "Fournit de fausses réponses DNS."
+        },
+        {
+          "id": 113,
+          "name": "DNS Cache Poisoning",
+          "description": "Contamine une résolution DNS mise en cache."
+        },
+        {
+          "id": 114,
+          "name": "DNS Hijacking",
+          "description": "Détourne la configuration ou délégation DNS."
+        },
+        {
+          "id": 115,
+          "name": "Man-in-the-Middle (MITM)",
+          "description": "Intercepte ou modifie une communication."
+        },
+        {
+          "id": 116,
+          "name": "TLS Downgrade",
+          "description": "Force une connexion vers un protocole ou chiffrement plus faible."
+        },
+        {
+          "id": 117,
+          "name": "Subdomain Takeover",
+          "description": "Prend le contrôle d'une ressource externe abandonnée mais référencée en DNS."
+        },
+        {
+          "id": 118,
+          "name": "CORS Misconfiguration",
+          "description": "Exploite une politique d'origines trop permissive."
+        },
+        {
+          "id": 119,
+          "name": "SSRF",
+          "description": "Fait émettre des requêtes serveur vers des cibles non autorisées."
+        },
+        {
+          "id": 120,
+          "name": "DNS Rebinding",
+          "description": "Change la résolution DNS pour détourner une politique de confiance."
+        },
+        {
+          "id": 121,
+          "name": "HTTP Method Tampering",
+          "description": "Utilise une autre méthode HTTP pour contourner un contrôle."
+        },
+        {
+          "id": 122,
+          "name": "Reverse Proxy Misconfiguration",
+          "description": "Abuse de divergences entre proxy et application."
+        }
+      ],
+      "path": "references/07-http-reseau.md"
+    },
+    {
+      "code": 8,
+      "title": "Disponibilité et DDoS",
+      "start": 123,
+      "items": [
+        {
+          "id": 123,
+          "name": "DoS",
+          "description": "Rend un service indisponible en épuisant ses ressources."
+        },
+        {
+          "id": 124,
+          "name": "DDoS",
+          "description": "Sature un service depuis de multiples sources."
+        },
+        {
+          "id": 125,
+          "name": "HTTP Flood",
+          "description": "Sature le traitement des requêtes HTTP."
+        },
+        {
+          "id": 126,
+          "name": "SYN Flood",
+          "description": "Épuise le traitement des connexions TCP initiales."
+        },
+        {
+          "id": 127,
+          "name": "UDP Flood",
+          "description": "Sature réseau ou serveur par trafic UDP."
+        },
+        {
+          "id": 128,
+          "name": "Slowloris",
+          "description": "Maintient longtemps des connexions HTTP incomplètes."
+        },
+        {
+          "id": 129,
+          "name": "Slow POST",
+          "description": "Envoie un corps de requête excessivement lent."
+        },
+        {
+          "id": 130,
+          "name": "Application Layer DDoS",
+          "description": "Surcharge des opérations métier coûteuses."
+        },
+        {
+          "id": 131,
+          "name": "DNS Amplification",
+          "description": "Utilise des réponses DNS disproportionnées comme vecteur de trafic."
+        },
+        {
+          "id": 132,
+          "name": "NTP Amplification",
+          "description": "Utilise des réponses NTP disproportionnées comme vecteur de trafic."
+        },
+        {
+          "id": 133,
+          "name": "Resource Exhaustion",
+          "description": "Épuise CPU, RAM, file d'attente ou espace disque."
+        },
+        {
+          "id": 134,
+          "name": "Connection Exhaustion",
+          "description": "Consomme le nombre maximal de connexions."
+        },
+        {
+          "id": 135,
+          "name": "API Flooding",
+          "description": "Sature un service via ses endpoints API."
+        },
+        {
+          "id": 136,
+          "name": "Database Query Exhaustion",
+          "description": "Provoque des requêtes SQL ou NoSQL disproportionnellement coûteuses."
+        },
+        {
+          "id": 137,
+          "name": "Login Flooding",
+          "description": "Sature le traitement des connexions utilisateur."
+        }
+      ],
+      "path": "references/08-ddos-disponibilite.md"
+    },
+    {
+      "code": 9,
+      "title": "SaaS multi-tenant",
+      "start": 138,
+      "items": [
+        {
+          "id": 138,
+          "name": "Cross-Tenant Data Leakage",
+          "description": "Divulgue des données d'une organisation à une autre."
+        },
+        {
+          "id": 139,
+          "name": "Tenant Impersonation",
+          "description": "Usurpe le contexte d'une organisation."
+        },
+        {
+          "id": 140,
+          "name": "SaaS Admin Takeover",
+          "description": "Compromet l'administration de la plateforme SaaS."
+        },
+        {
+          "id": 141,
+          "name": "Subscription Bypass",
+          "description": "Utilise une fonctionnalité sans l'abonnement requis."
+        },
+        {
+          "id": 142,
+          "name": "Feature Flag Manipulation",
+          "description": "Modifie des drapeaux de fonctionnalité non autorisés."
+        },
+        {
+          "id": 143,
+          "name": "Billing Manipulation",
+          "description": "Manipule les données de facturation."
+        },
+        {
+          "id": 144,
+          "name": "Usage Limit Bypass",
+          "description": "Dépasse quotas ou limites de contrat."
+        },
+        {
+          "id": 145,
+          "name": "SaaS API Abuse",
+          "description": "Abuse des intégrations et API du service."
+        },
+        {
+          "id": 146,
+          "name": "Insecure Tenant Provisioning",
+          "description": "Crée ou associe une organisation sans validations nécessaires."
+        },
+        {
+          "id": 147,
+          "name": "Cross-Tenant File Access",
+          "description": "Accède aux documents d'une autre organisation."
+        },
+        {
+          "id": 148,
+          "name": "Insecure Organization Invitations",
+          "description": "Profite de jetons d'invitation mal vérifiés."
+        },
+        {
+          "id": 149,
+          "name": "Shared Resource Misconfiguration",
+          "description": "Partage des caches, files ou objets entre tenants sans isolation."
+        },
+        {
+          "id": 150,
+          "name": "SaaS Integration Token Theft",
+          "description": "Vole des identifiants de connecteurs tiers."
+        },
+        {
+          "id": 151,
+          "name": "Webhook Spoofing",
+          "description": "Envoie un événement falsifié au système."
+        },
+        {
+          "id": 152,
+          "name": "Webhook Replay",
+          "description": "Réutilise un événement webhook pourtant déjà consommé."
+        },
+        {
+          "id": 153,
+          "name": "Permission Inheritance Abuse",
+          "description": "Exploite la propagation incorrecte des permissions."
+        },
+        {
+          "id": 154,
+          "name": "Insecure User Impersonation Feature",
+          "description": "Abuse de la fonction support « agir en tant que »."
+        }
+      ],
+      "path": "references/09-saas-multitenant.md"
+    },
+    {
+      "code": 10,
+      "title": "Transactions et logique métier",
+      "start": 155,
+      "items": [
+        {
+          "id": 155,
+          "name": "Business Logic Abuse",
+          "description": "Exploite des règles métier incohérentes ou incomplètes."
+        },
+        {
+          "id": 156,
+          "name": "Race Condition",
+          "description": "Profite de deux opérations concurrentes non synchronisées."
+        },
+        {
+          "id": 157,
+          "name": "TOCTOU",
+          "description": "Change l'état entre la vérification et l'utilisation."
+        },
+        {
+          "id": 158,
+          "name": "Price Manipulation",
+          "description": "Modifie un prix calculé ou transmis depuis le client."
+        },
+        {
+          "id": 159,
+          "name": "Payment Bypass",
+          "description": "Marque une transaction payée sans preuve serveur suffisante."
+        },
+        {
+          "id": 160,
+          "name": "Coupon Abuse",
+          "description": "Réutilise ou combine abusivement des réductions."
+        },
+        {
+          "id": 161,
+          "name": "Refund Fraud",
+          "description": "Contourne les règles et étapes du remboursement."
+        },
+        {
+          "id": 162,
+          "name": "Inventory Manipulation",
+          "description": "Modifie des stocks hors des règles métiers."
+        },
+        {
+          "id": 163,
+          "name": "Transaction Replay",
+          "description": "Réexécute une transaction autorisée une première fois."
+        },
+        {
+          "id": 164,
+          "name": "Double Spending",
+          "description": "Consomme deux fois le même solde ou crédit."
+        },
+        {
+          "id": 165,
+          "name": "Workflow Bypass",
+          "description": "Contourne une étape obligatoire d'une opération."
+        },
+        {
+          "id": 166,
+          "name": "Negative Quantity Abuse",
+          "description": "Exploite des valeurs négatives inattendues."
+        },
+        {
+          "id": 167,
+          "name": "Parameter Price Tampering",
+          "description": "Falsifie la valeur de prix fournie au serveur."
+        },
+        {
+          "id": 168,
+          "name": "Order Status Manipulation",
+          "description": "Modifie un état de commande hors du workflow."
+        },
+        {
+          "id": 169,
+          "name": "Approval Workflow Bypass",
+          "description": "Valide une action sans approbation requise."
+        },
+        {
+          "id": 170,
+          "name": "Insecure Payment Callback",
+          "description": "Accepte une confirmation de paiement insuffisamment authentifiée."
+        }
+      ],
+      "path": "references/10-logique-metier.md"
+    },
+    {
+      "code": 11,
+      "title": "Cloud, DevOps et supply chain",
+      "start": 171,
+      "items": [
+        {
+          "id": 171,
+          "name": "Cloud Misconfiguration",
+          "description": "Exposition due aux règles de sécurité cloud non adaptées."
+        },
+        {
+          "id": 172,
+          "name": "Exposed Storage Bucket",
+          "description": "Rend des objets stockés accessibles publiquement."
+        },
+        {
+          "id": 173,
+          "name": "IAM Privilege Escalation",
+          "description": "Abuse de permissions ou rôles IAM trop larges."
+        },
+        {
+          "id": 174,
+          "name": "Cloud Credential Theft",
+          "description": "Soustrait des identifiants cloud."
+        },
+        {
+          "id": 175,
+          "name": "Container Escape",
+          "description": "Traverse l'isolation d'un conteneur."
+        },
+        {
+          "id": 176,
+          "name": "Kubernetes Misconfiguration",
+          "description": "Abuse d'un cluster et de ressources mal configurés."
+        },
+        {
+          "id": 177,
+          "name": "Exposed Kubernetes Dashboard",
+          "description": "Accède à une console de cluster exposée."
+        },
+        {
+          "id": 178,
+          "name": "CI/CD Pipeline Compromise",
+          "description": "Modifie des étapes d'intégration ou déploiement."
+        },
+        {
+          "id": 179,
+          "name": "Dependency Confusion",
+          "description": "Fait installer une dépendance publique à la place d'une interne."
+        },
+        {
+          "id": 180,
+          "name": "Typosquatting Package Attack",
+          "description": "Introduit un paquet avec un nom trompeusement proche."
+        },
+        {
+          "id": 181,
+          "name": "Supply Chain Attack",
+          "description": "Compromet un fournisseur ou une dépendance de confiance."
+        },
+        {
+          "id": 182,
+          "name": "Malicious Package Injection",
+          "description": "Introduit du code malveillant dans une bibliothèque."
+        },
+        {
+          "id": 183,
+          "name": "Secret Leakage",
+          "description": "Expose des clés, tokens ou mots de passe."
+        },
+        {
+          "id": 184,
+          "name": "Git Repository Exposure",
+          "description": "Expose l'historique et les fichiers Git."
+        },
+        {
+          "id": 185,
+          "name": "Docker Socket Exposure",
+          "description": "Rend accessible le socket de contrôle Docker."
+        },
+        {
+          "id": 186,
+          "name": "Infrastructure as Code Misconfiguration",
+          "description": "Déploie des ressources à partir de paramètres IaC dangereux."
+        },
+        {
+          "id": 187,
+          "name": "Build Artifact Tampering",
+          "description": "Modifie le résultat final d'une compilation ou livraison."
+        }
+      ],
+      "path": "references/11-cloud-devops.md"
+    },
+    {
+      "code": 12,
+      "title": "Ingénierie sociale et identité",
+      "start": 188,
+      "items": [
+        {
+          "id": 188,
+          "name": "Phishing",
+          "description": "Incite une personne à révéler ses accès dans une fausse interface."
+        },
+        {
+          "id": 189,
+          "name": "Spear Phishing",
+          "description": "Phishing personnalisé sur une victime ou équipe."
+        },
+        {
+          "id": 190,
+          "name": "Clone Phishing",
+          "description": "Reproduit un message légitime pour tromper le destinataire."
+        },
+        {
+          "id": 191,
+          "name": "Adversary-in-the-Middle Phishing",
+          "description": "Intercepte le parcours de connexion via une interface relais."
+        },
+        {
+          "id": 192,
+          "name": "Social Engineering",
+          "description": "Manipule l'utilisateur ou un agent support."
+        },
+        {
+          "id": 193,
+          "name": "Pretexting",
+          "description": "Utilise un scénario mensonger pour obtenir une action."
+        },
+        {
+          "id": 194,
+          "name": "Helpdesk Impersonation",
+          "description": "Se fait passer pour le support d'un service."
+        },
+        {
+          "id": 195,
+          "name": "Fake Login Page",
+          "description": "Reproduit un formulaire de connexion dans une page frauduleuse."
+        },
+        {
+          "id": 196,
+          "name": "Session Token Phishing",
+          "description": "Trompe la victime pour obtenir un artefact de session."
+        },
+        {
+          "id": 197,
+          "name": "QR Code Phishing",
+          "description": "Oriente une personne vers une destination frauduleuse via QR code."
+        },
+        {
+          "id": 198,
+          "name": "Malicious Browser Extension",
+          "description": "Utilise une extension pour accéder au contexte du navigateur."
+        },
+        {
+          "id": 199,
+          "name": "OAuth Consent Phishing",
+          "description": "Fait autoriser une application OAuth malveillante."
+        },
+        {
+          "id": 200,
+          "name": "Business Email Compromise",
+          "description": "Usurpe la messagerie d'une entreprise pour frauder."
+        }
+      ],
+      "path": "references/12-ingenierie-sociale.md"
+    },
+    {
+      "code": 13,
+      "title": "IA et agents",
+      "start": 201,
+      "items": [
+        {
+          "id": 201,
+          "name": "Prompt Injection",
+          "description": "Place des instructions non fiables dans les contenus traités par un modèle."
+        },
+        {
+          "id": 202,
+          "name": "Indirect Prompt Injection",
+          "description": "Camoufle une instruction dans une page ou un document récupéré."
+        },
+        {
+          "id": 203,
+          "name": "Tool Output Manipulation",
+          "description": "Falsifie la réponse d'un outil ou service pour orienter l'agent."
+        },
+        {
+          "id": 204,
+          "name": "AI Agent Tool Abuse",
+          "description": "Détourne les capacités d'action accordées à un agent IA."
+        },
+        {
+          "id": 205,
+          "name": "Sensitive Data Disclosure via LLM",
+          "description": "Obtient la restitution non autorisée d'informations par un modèle."
+        },
+        {
+          "id": 206,
+          "name": "RAG Data Poisoning",
+          "description": "Intègre de fausses données dans un corpus utilisé pour la génération."
+        },
+        {
+          "id": 207,
+          "name": "Vector Database Access Abuse",
+          "description": "Explore des embeddings ou documents en dehors de son périmètre."
+        },
+        {
+          "id": 208,
+          "name": "LLM Resource Exhaustion",
+          "description": "Épuise coûts et quotas liés aux modèles."
+        },
+        {
+          "id": 209,
+          "name": "Insecure LLM Output Handling",
+          "description": "Traite une sortie IA comme une commande ou donnée de confiance."
+        },
+        {
+          "id": 210,
+          "name": "Excessive Agency",
+          "description": "Confère à l'agent plus de permissions ou autonomie que nécessaire."
+        }
+      ],
+      "path": "references/13-ia-agents.md"
+    }
+  ]
+}
